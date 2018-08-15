@@ -9,12 +9,12 @@ var keys = require("./keys.js");
 var Spotify = new Spotify(keys.spotify);
 
 // arguments
-var argOne = process.argv[2]
-var argTwo = process.argv[3];
+var arg1 = process.argv[2]
+var arg2 = process.argv[3];
 
 //main run function
-var run = (argOne, argTwo) => {
-  getArg(argOne, argTwo);
+var run = (arg1, arg2) => {
+  getArg(arg1, arg2);
 };
 
 //switch statement for choosing which command to run and returning the arguments
@@ -34,7 +34,7 @@ var getArg = (switchData, functionData) => {
 
     //omdb
     case "movie":
-      myMovie();
+      myMovie(functionData);
         break;
 
     //default case to return error
@@ -42,6 +42,11 @@ var getArg = (switchData, functionData) => {
       console.log("LIRI could not recognize this command.");
         break;
   }
+};
+
+//loops through the artist array untill it finds artist
+var getArtist = (data) => {
+  return data.name;
 };
 
 //getSong function connects to the spotify api and retrieves data for what the user inputs into LIRI
@@ -71,6 +76,8 @@ var getSong = (song) => {
       
       //loops throgh the array and returns data called
       for (var i = 0; i < songReturned.length; i++) {
+        //uses the map() function to return an array and loop through it untill you find the artist name
+        console.log(songReturned[i].artists.map(getArtist));
         console.log("song name: " +  songReturned[i].name);
         console.log("preview song: " + songReturned[i].preview_url);
     }
@@ -96,5 +103,37 @@ var fsRandom = (functionData) => {
     });
 };
 
+//function for querying omdb to return movie information
+var myMovie = (functionData) => {
+
+  //defines the queryUrl for obtaining movie data
+  var queryUrl = "http://www.omdbapi.com/?t=" + functionData + "&apikey=6704a841";
+
+  //obtains information from the API by passing queryURL to the request() function
+  request(queryUrl, (error, response, body) => {
+    //checks if the arg2 has received any input from the user
+    if (functionData === undefined) {
+      //if not sets the input to default of "Mr. Nobody" and logs the body for that movie.
+      request("http://www.omdbapi.com/?t=mr+nobody&apikey=9379fb14", (error, response, body) => {
+        if (!error && response.statusCode === 200) {
+        console.log(JSON.parse(body), null, 2);
+        }
+      }); 
+    }
+
+
+    //checks if the response code = 200(good response) and pushes
+    if (response.statusCode === 200) {
+        console.log("Title: " + JSON.parse(body).Title);
+        console.log("Year Released: " + JSON.parse(body).Year);
+        console.log("Rating: " + JSON.parse(body).imdbRating);
+        console.log("Country Produced: " + JSON.parse(body).Country);
+        console.log("Language: " + JSON.parse(body).Language);
+        console.log("Plot Summary: " + JSON.parse(body).Plot);
+        console.log("Actors Involed: " + JSON.parse(body).Actors);
+      }
+  });
+};
+
 //init the app
-run(argOne, argTwo);
+run(arg1, arg2);
