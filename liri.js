@@ -29,7 +29,7 @@ var getArg = (switchData, functionData) => {
 
     //do-what-it-says
     case "do-it":
-      fsRandom(functionData);
+      fsRandom();
         break;
 
     //omdb
@@ -86,7 +86,7 @@ var getSong = (song) => {
 
 //fsRandom function uses the fs module to read the random.txt file
 // and command node to call the spotify api to reutrn song data
-var fsRandom = (functionData) => {
+var fsRandom = () => {
       //running the fs.readFile method to load random.txt
       fs.readFile("random.txt", "utf8", function (error, data) {
           //checks for errors in the fs.readFile function returns the data thrown
