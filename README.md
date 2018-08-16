@@ -3,7 +3,7 @@
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+[![Downloads Stats][npm-downloads()]][npm-url]
 
 LIRI is a Language Interpretation and Recognition Interface that must be used via the command line. LIRI takes in parameters and gives you back data.
 
@@ -12,7 +12,12 @@ LIRI is a Language Interpretation and Recognition Interface that must be used vi
 ## Usage example
 
 A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+
+(https://media.giphy.com/media/63JCW6ei9yYPvGMw2b/giphy.gif)
 (https://media.giphy.com/media/8csqXDK6Uh6bMRUIt9/giphy.gif)
+(https://media.giphy.com/media/ja8Hlbyp9l6QJFsAfu/giphy.gif)
+(https://media.giphy.com/media/4N8Xbsrz8iNeRWdNLo/giphy.gif)
+
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
 ```
