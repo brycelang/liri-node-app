@@ -1,3 +1,5 @@
+<a href="https://github.com/brycelang/liri-node-app"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
 <h1 align="center">
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTmnEvJwt77nWF_gazXXZtT6tlZcOUkPekWpk4exvUY2TDj1IZw" alt="Markdownify" width="200"></a>
@@ -7,8 +9,6 @@
 </h1>
 
 <h4 align="center">A minimalistic language interpreting program built on <a href="https://nodejs.org/en/" target="_blank">Node</a>.</h4>
-
-<a href="https://github.com/brycelang/liri-node-app"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
 <p align="center">
 
