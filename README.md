@@ -33,7 +33,7 @@
 
 ## Key Features
 
-* IRI is a command line node app that takes in parameters and returns data based on one of four commands:
+* LIRI is a command line node app that takes in parameters and returns data based on one of four commands:
   - movie
   - spotify
   - do-it
