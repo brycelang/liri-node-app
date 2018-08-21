@@ -1,40 +1,98 @@
-# liri-node-app
-> Node.JS Language Interpereter
+<h1 align="center">
+  <br>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTmnEvJwt77nWF_gazXXZtT6tlZcOUkPekWpk4exvUY2TDj1IZw" alt="Markdownify" width="200"></a>
+  <br>
+  LIRI-Node-App
+  <br>
+</h1>
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads()]][npm-url]
+<h4 align="center">A minimalistic language interpreting program built on <a href="https://nodejs.org/en/" target="_blank">Node</a>.</h4>
 
-LIRI is a Language Interpretation and Recognition Interface that must be used via the command line. LIRI takes in parameters and gives you back data.
+<a href="https://github.com/brycelang/liri-node-app"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
-![](header.png)
+<p align="center">
 
-## Usage example
+  <a href="">
+  <img src="https://img.shields.io/badge/Version-1.0.0-LIGHTBLUE.svg"></a>
+  
+  <a href="">
+    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
+  </a>
+</p>
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
+</p>
 
-(https://media.giphy.com/media/63JCW6ei9yYPvGMw2b/giphy.gif)
-(https://media.giphy.com/media/8csqXDK6Uh6bMRUIt9/giphy.gif)
-(https://media.giphy.com/media/ja8Hlbyp9l6QJFsAfu/giphy.gif)
-(https://media.giphy.com/media/4N8Xbsrz8iNeRWdNLo/giphy.gif)
+![screenshot](https://thumbs.gfycat.com/IdealHighKrill-size_restricted.gif)
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+## Key Features
 
+* IRI is a command line node app that takes in parameters and returns data based on one of four commands:
+  - movie
+  - spotify
+  - do-it
+
+
+* Querys different API's for specific data
+  - OMDB
+  - Spotify
+  - Twitter [TODO]
+
+
+* Displays returned data in the command line  
+
+* Cross platform
+  - Windows, Mac and Linux ready.
+
+## How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/brycelang/liri-node-app
+
+# Go into the repository
+$ cd liri-node-app
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
 ```
 
-ork in progress
+Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-## Contributing
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+## Download
 
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+You can [download](https://github.com/brycelang/liri-node-app/archive/master.zip) latest CLI of Liri for Windows, macOS and Linux.
+
+## Credits
+
+This software uses code from several open source packages.
+
+- [Node.js](https://nodejs.org/)
+- [Chalk](https://chalk.org)
+
+## Related
+
+- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
+- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
+
+## License
+
+Open Source
+
+---
+
+> [brycelang.me](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
+> GitHub [@bryceLang](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
+> LinkdIn [Bryce Lang](https://)
